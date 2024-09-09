@@ -1,0 +1,108 @@
+/* 
+blue: #053C5E;
+red: #A31621;
+cosmic latte: #FFF8E7;
+
+*/
+
+.secret {
+    color:#FFF8E7;
+    }
+  
+  .indexBody {
+    background-color: #FFF8E7;
+    color: black;
+    font-size:1rem;
+    
+  }
+  
+  
+  
+  /*Main, get some margins plz */
+  main {
+    margin: 2rem;
+    }
+    
+    h1 {
+     font-family: "Comic Sans MS", "Comic Sans", cursive;
+     color:#A31621;
+      }
+  
+  /* contains all the paragraphs*/
+  .text-box {
+    display:flex;
+    flex-direction:column;
+    }
+    
+  /**/
+  
+  form > * {
+    display:block;
+    margin-bottom:0.5rem;
+    }
+    
+    
+   .submit-btn {
+      background-color:#053C5E;
+      color: #FFF8E7;
+      border:none;
+      border-radius:1rem;
+      padding:0.5rem 1rem;
+      }
+     
+  /* THERAPY PAGE */
+  .therapyBody {
+    background-color: black;
+    color:white;
+    }  
+    
+  .center-wrapper {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+  .content-box h2 {
+    text-align: center;
+    font-family: monospace;
+    font-size: 2rem;
+  }
+    
+  .poster {
+    outline:2px solid white;
+    outline-offset:2px;
+    display:flex; 
+    
+    }
+    
+  .poster img {
+    width:100%;
+    
+    align-items:center;
+    
+    }
+
+    /* DROPS */
+
+    .drop {
+      position: absolute;
+      width:2px;
+      height:2px;
+      background-color: rgb(218, 218, 218);
+      border-radius: 50%;
+      /* filter:blur(1px); */
+
+      /* animation */
+      animation-name: raining;
+      animation-duration: 1.5s;
+      animation-timing-function: ease-in;
+      animation-iteration-count: infinite;
+    }
+
+
+    @keyframes raining {
+      0% {top:50px; opacity:1;}
+      90% {opacity:0.8}
+      100% {top:90%; opacity:0;}
+    }
+  
