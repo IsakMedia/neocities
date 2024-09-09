@@ -19,16 +19,7 @@ const appendValue = (e)=> {
   
  btn.addEventListener('click', appendValue);
  
-const cloud = document.querySelector(".rain-box") 
- 
-const rainEffect = () => {
-  
-  // create a single drop
-   const drop = document.createElement(div);
-   drop.classList.add("drop")
-   cloud.appendChild("drop");
-   
-}
+
 // create a drop, 
 //use math random to place them on X axis using absolute and left.
 // how do i give them a position `drop.style.left:${Xplacment};`
@@ -38,9 +29,5 @@ const rainEffect = () => {
 // create a loop that creates raindrops with a random timeInterval to make them spawn randomly
 // create a array or something to keep track of max drops and remove them from document after raining. 
 
-const randomDropPlacement = () => {
-    
-  
-}
 
 

@@ -20,7 +20,7 @@ cosmic latte: #FFF8E7;
   
   /*Main, get some margins plz */
   main {
-    margin: 2rem;
+    margin:0 2rem;
     }
     
     h1 {
@@ -50,6 +50,8 @@ cosmic latte: #FFF8E7;
       padding:0.5rem 1rem;
       }
      
+/* ------------------------------------------------------------------- */
+
   /* THERAPY PAGE */
   .therapyBody {
     background-color: black;
@@ -58,8 +60,13 @@ cosmic latte: #FFF8E7;
     
   .center-wrapper {
     display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    height:100vh;
+    overflow: hidden;
+    
     }
 
   .content-box h2 {
@@ -84,6 +91,15 @@ cosmic latte: #FFF8E7;
 
     /* DROPS */
 
+    .rain-box {
+      width:100%;
+      height:100%;
+      position: absolute;
+      top: -100px;
+      transform: rotate(5deg);
+    
+    }
+
     .drop {
       position: absolute;
       width:2px;
@@ -94,15 +110,25 @@ cosmic latte: #FFF8E7;
 
       /* animation */
       animation-name: raining;
-      animation-duration: 1.5s;
+      animation-duration: 2.5s;
       animation-timing-function: ease-in;
       animation-iteration-count: infinite;
     }
 
 
     @keyframes raining {
-      0% {top:50px; opacity:1;}
+      0% {top:0; opacity:1;}
       90% {opacity:0.8}
-      100% {top:90%; opacity:0;}
+      100% { opacity:0.2;}
     }
   
+
+
+.player-box {
+  border:1px solid red;
+ 
+
+}    
+.music-player {
+
+}
